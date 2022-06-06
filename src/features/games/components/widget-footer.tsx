@@ -22,7 +22,7 @@ const WidgetFooter = ({}: WidgetFooterProps) => {
       <Separator size="lg" />
       <Row className="w-full relative">
         <Row className="absolute bottom-0 w-full justify-center">
-          <Row className="w-10 h-10 rounded-full bg-info-200 bottom-0 justify-center items-center">
+          <Row className="w-10 h-10 rounded-full bg-info-200 bottom-0 justify-center items-center hover:cursor-pointer hover:bg-info-100">
             <ChevronDownIcon className="w-5 h-5" />
           </Row>
         </Row>

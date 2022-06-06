@@ -1,4 +1,5 @@
 import Column from "components/column";
+import Image from "components/image";
 import Separator from "components/separator";
 import Text from "components/text";
 import React from "react";
@@ -12,7 +13,7 @@ const PlayerListItem = ({ player }: PlayerListItemProps) => {
   const lastName = player?.last_name;
   return (
     <Column className="border justify-center items-center m-2 pb-2 pt-2">
-      <img
+      <Image
         alt={`${firstName} ${lastName}`}
         width={96}
         src={`https://nba-players.herokuapp.com/players/${firstName}_${lastName}`}

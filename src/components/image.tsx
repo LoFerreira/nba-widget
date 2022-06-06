@@ -1,21 +1,13 @@
 import React from "react";
 
 type ImageProps = {
-  className?: string;
+  alt: string;
   src?: string;
   width?: number;
   height?: number;
 };
-const Image = ({ className, src, width, height }: ImageProps) => {
-  if (!src) {
-    return (
-      <div className={`${className} bg-gray-200`} style={{ width, height }} />
-    );
-  }
-
-  return (
-    <image className={className} href={src} width={width} height={height} />
-  );
+const Image = ({ alt, src, width, height }: ImageProps) => {
+  return <img alt={alt} width={width} height={height} src={src} />;
 };
 
 export default Image;

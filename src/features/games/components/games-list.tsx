@@ -1,6 +1,6 @@
 import Column from "components/column";
 import LoadingContent from "components/loading-content";
-import WidgetFooter from "features/widget/components/widget-footer";
+import WidgetFooter from "features/games/components/widget-footer";
 import useRequest from "hooks/use-request";
 import React from "react";
 import { getAllGames, PATH } from "../actions";

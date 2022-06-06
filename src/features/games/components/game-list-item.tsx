@@ -18,7 +18,9 @@ const GameListItem = ({ data }: GameListItemProps) => {
 
   return (
     <Column className="border-r border-b border-gray-500 p-4">
-      <Text color="secondary">Jogo {index}</Text>
+      <Row className="flex-1">
+        <Text color="secondary">Jogo {index}</Text>
+      </Row>
       <Row className="justify-between items-center">
         <Column className="flex-1 pr-1">
           <Row className="relative items-center justify-between pr-4 flex-1">
